@@ -38,7 +38,8 @@ def extract_company_jobs(self, company_id: str):
             crawl_type='extraction',
             status='running',
             started_at=datetime.utcnow()
-        )
+            ### started_at=datetime.now(datetime.timezone.utc)
+        )  
         db.add(crawl_log)
         db.commit()
         

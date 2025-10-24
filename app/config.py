@@ -2,7 +2,6 @@
 Configuration management for the Real-Jobs application.
 """
 
-import os
 from typing import Optional
 from pydantic import BaseSettings, Field
 
